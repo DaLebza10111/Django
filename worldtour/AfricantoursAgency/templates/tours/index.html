@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Tours</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+    
+</head>
+<body>
+    <h1>African Tours</h1>
+    <ul>
+        {% for tour in tours %}
+        <li>{{tour}}</li>
+        {% endfor %}
+
+        <script src="{% static 'js/script.js' %}"></script>
+        <img scr="{% static 'images/farm.png' %}" alt="Django logo">
+    </ul>
+</body>
+</html>
